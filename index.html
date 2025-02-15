@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Delicious</h1>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#booking">Book a Table</a></li>
+                <li><a href="#order">Order Now</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Experience the Taste of Perfection</h2>
+        <p>Order your favorite meals before arriving!</p>
+        <a href="#menu" class="btn">Explore Menu</a>
+    </section>
+
+    <section id="menu" class="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-container">
+            <div class="menu-item">
+                <img src="images/pizza.jpg" alt="Pizza">
+                <h3>Margherita Pizza</h3>
+                <p>$12.99</p>
+            </div>
+            <div class="menu-item">
+                <img src="images/burger.jpg" alt="Burger">
+                <h3>Classic Burger</h3>
+                <p>$9.99</p>
+            </div>
+            <div class="menu-item">
+                <img src="images/pasta.jpg" alt="Pasta">
+                <h3>Creamy Alfredo Pasta</h3>
+                <p>$14.99</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking" class="booking">
+        <h2>Book a Table</h2>
+        <form id="booking-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="number" placeholder="Number of Guests" required>
+            <input type="date" required>
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+
+    <section id="order" class="order">
+        <h2>Order Your Meal</h2>
+        <form id="order-form">
+            <select required>
+                <option value="">Select Your Meal</option>
+                <option value="Pizza">Pizza</option>
+                <option value="Burger">Burger</option>
+                <option value="Pasta">Pasta</option>
+            </select>
+            <input type="text" placeholder="Your Name" required>
+            <input type="address" placeholder="Delivery Address" required>
+            <button type="submit">Place Order</button>
+        </form>
+    </section>
+
+    <footer id="contact">
+        <h3>Contact Us</h3>
+        <p>Email: support@delicious.com</p>
+        <p>Phone: +123 456 7890</p>
+        <p>&copy; 2025 Delicious Restaurant. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
